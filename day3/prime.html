@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let count=0
+        // let flag=false;
+        // let num=Number(prompt("Enter the no."))
+        // for(let i=2;i<=num-1;i++)
+        // {
+        //     if(num%i==0)
+        //     {   count=true;
+        //     break
+               
+        //     }
+        // }
+        // if(count==false)
+        // {
+        //     console.log("prime no.");
+        // }
+        // else console.log("non-prime no.");
+       
+        // let n1=Number(prompt("Enter the no."))
+        // let n2=Number(prompt("Enter the no."))
+        // for(let num=10;num<=50;num++)
+        //     { let count=false
+        //         for(let i=2;i<=num-1;i++)
+        // {
+        //     if(num%i==0)
+        //     {   count=true;
+        //     break
+               
+        //     }
+        // }
+        //     }
+        // if(count==false)
+        // {
+        //     console.log(num);
+        // }
+
+
+
+// for(let num=10;num<=1000;num++)
+// {let sum=0
+// for(let i=1;i<num;i++)
+// {
+//     if(num%i==0)
+//     sum+=i;
+// }
+// }
+// if(sum==num)
+// {
+//     console.log(`${num} is perfect no.`)
+// }        
+// else{
+//     console.log(`${num} is non-perfect no.`)
+// }        
+
+
+let num=Number(prompt("enter the number"))
+let temp=num
+let sum=0
+while(num>0)
+{
+    let dig=(num%10)
+    sum+fact(dig)
+    num=Math.trunc(num/10)
+
+}
+if(sum==temp)
+{
+    console.log("Strong no");
+}
+else{
+    console.log("non-strong no");
+}0
+
+function fact(num) {
+    let fact1=1
+    for (let i = 1; i <= num; i++){
+        fact1*=i;
+1       
+    }
+    return(fact1)
+}
+    </script>
+</body>
+</html>

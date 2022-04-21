@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function emp(na,eid ) {
+            this.na=na;
+            this.eid=eid
+            
+            
+
+        }
+        let e=new emp("smith",123)
+        let e1=new emp("miller",456)
+        console.log(e);
+        e.__proto__.cn="tyss"
+
+        console.log(e1.__proto__.cn)
+
+    </script>
+</body>
+</html>

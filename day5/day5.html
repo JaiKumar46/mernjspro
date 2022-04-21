@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let arr=[10,2,8,9,1,6,5,4,8]
+    //   for (let i = 0; i < arr.length; i++) {
+    //         for (let j = i+1; j < arr.length; j++) {
+    //            if(arr[i]>arr[j])
+    //            {
+    //                let temp=arr[i]
+    //                arr[i]=arr[j]
+    //                arr[j]=temp
+    //            }
+                
+    //         }
+          
+    //   }
+    //     console.log(arr);
+
+
+
+    let str="jkljcjwjc"
+    
+    for (let i = 0; i < str.length; i++) {
+        let c=str.charCodeAt(i)
+        if( c>=97 && c<=122){
+        for(let j=i+1;j<str.length;j++)
+        {
+            
+            let f=str.charCodeAt(j)
+            if( f>=97 && f<=122)
+            {
+                if(str[i]>str[j])
+                {
+                    let temp=str[i]
+                    str[i]=str[j]
+                    str[j]=temp
+                }
+            }
+        }}
+        
+    }
+    console.log(str);
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let str="hello"
+        //  str=str.split("")
+        //  let str1=new Set(str)
+        //  for (let i of str1) {
+        //      let count=0
+        //      for (let j  of str) {
+        //          if (i==j) {
+                    
+        //              count++
+        //          }
+        //      }
+        //      if(count==1){
+
+             
+        //      console.log(i+" "+count);
+        //  }}
+    //    let str2=[]; Set(Array)
+    //    for (let i = 0; i < str.length; i++) {
+    //         str2.push(str.charAt(i)
+           
+    //    }
+
+
+    // let arr=[10,5,7,9,11,12,14,17] 
+    // let even=[]
+    //     let odd=[]
+        
+    // for (let i of arr) {
+    //    if(arr%2==0)
+    //         even.push(arr)
+    //     else 
+    //         odd.push(arr)
+    // }
+    
+    // a=[]
+    // for (let i of even) {
+    //     a.push(i)
+    // }
+    // for (let j of odd) {
+    //     a.push(j)
+    // }
+
+    // console.log(a);
+
+
+    // function emp(ename,eid,esal)
+    // {
+    //     this.ename=ename
+    //     this.eid=eid
+    //     this.esal=esal
+    // }
+    // let arr=[]
+    // arr.push(new emp("shiva",123,30000))
+    // arr.push(new emp("Ravi",145,45000))
+    // arr.push(new emp("sushma",143,35000))
+    // arr.push(new emp("anusha",045,40000))
+    // arr.push(new emp("sujatha",256,70000))
+    // console.log(arr);
+    // arr1=arr.sort((a, b)=>(a.esal-b.esal))
+    // console.log(arr1)
+
+
+
+    function emp(ename,city)
+    {
+        this.ename=ename
+        this.city=city
+        
+    }
+    let arr=[]
+    let city1=[]
+    arr.push(new emp("shiva","chni"))
+    arr.push(new emp("Ravi","bng"))
+    arr.push(new emp("sushma","hyd"))
+    arr.push(new emp("anusha","bng"))
+    arr.push(new emp("sujatha","chni"))
+    
+    for ( a of arr) {
+        city1.push(a.city)
+
+    }
+    
+     city1=new Set(city1)
+    for (let c of city1) {
+        let count=0;
+        for ( a of arr) {
+            if(a.city==c) count++;
+        }
+        console.log(c+"===" +count);
+    }
+    console.log(arr1)
+        
+
+    </script>
+</body>
+</html>
